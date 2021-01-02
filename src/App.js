@@ -1,9 +1,9 @@
 import React  from "react";
-import Nav from './Components/Nav/Nav'
+import NavBar from './Components/NavBar/NavBar'
 function App() {
   return (
     <div className="App">
-      <Nav />
+      <NavBar />
     </div>
   );
 }
