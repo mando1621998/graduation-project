@@ -1,0 +1,13 @@
+.navbar-light{
+    background: #E7D9EA !important;
+    
+}
+.navbar-nav a{
+    margin: 7px;
+    color: #11698D !important;
+    transition: color .2s ease-in-out;
+}
+.navbar-nav a:hover{
+    text-decoration: none;
+    color: #16C799 !important;
+}
