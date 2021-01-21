@@ -1,27 +1,34 @@
 import React from 'react'
 import '../NavBar/NavBar.css'
-import {Container,Nav,Navbar} from 'react-bootstrap'
+import logo from "../img/logo.png"
+import {Container,Nav,Navbar,NavDropdown,Row,Col} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 function NavBar() {
     return(
         
-            <Navbar >
-                <Container>
-                    
-                        <Navbar.Brand href="#home">Logo</Navbar.Brand>
-                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                        <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className="ml-auto">
-                                <Link to='/'>الرئيسيه</Link>
-                                <Link to="/Services">خدماتنا</Link>
-                                <Link to="/About">من نحن</Link>
-                                <Link to="/Contact">تواصل معنا</Link>
-                            </Nav>
-                        </Navbar.Collapse>
-                        
+        <Navbar collapseOnSelect expand="lg">
+            <Container>
+                <Row className="r-nav">
 
-                </Container>
-            </Navbar>
+                <Col className="col-nav" xs={6} md={5}>
+                    <ul className="ul-nav">
+                        <li>
+                            <Link to="/contact">تواصل معنا</Link>
+                        </li>
+                        <li>
+                            <Link to="/about">من نحن</Link>
+                        </li>
+                    </ul>
+                </Col>
+                <Col className="col-nav" xs={6} md={2}>
+                    {/* <img className="logo" src={logo} alt="" /> */}
+                </Col>
+                <Col className="col-nav" xs={6} md={5}>
+                    xs=6 md=4
+                </Col>
+                </Row>
+            </Container>
+        </Navbar>
         
 
     )

@@ -1,13 +1,35 @@
-.navbar-light{
-    background: #E7D9EA !important;
+@import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
+
+body{
+    height: 5000px;
+}
+.r-nav{
+    width: 100%;
     
 }
-.navbar-nav a{
-    margin: 7px;
-    color: #11698D !important;
-    transition: color .2s ease-in-out;
+.col-nav{
+    display: flex;
+    justify-content: center;
+    
 }
-.navbar-nav a:hover{
+.navbar-light{
+    background-color: gray !important;
+    height: 100px;
+}
+.ul-nav{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lateef', cursive;
+    
+}
+.ul-nav li a{
     text-decoration: none;
-    color: #16C799 !important;
+    font-size: 30px;
+}
+.logo{
+    width: 110px;
 }
