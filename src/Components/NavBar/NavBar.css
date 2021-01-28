@@ -1,35 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
-
-body{
-    height: 5000px;
+.bg-color{
+    background: #10385C !important;
+    height: 83px;
 }
-.r-nav{
-    width: 100%;
-    
-}
-.col-nav{
-    display: flex;
-    justify-content: center;
-    
-}
-.navbar-light{
-    background-color: gray !important;
-    height: 100px;
-}
-.ul-nav{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    width: 45%;
-    padding: 0;
-    margin: 0;
+.navbar-brand a{
+    color:#F3F6FF !important;
+    text-decoration: none !important;
     font-family: 'Lateef', cursive;
-    
-}
-.ul-nav li a{
-    text-decoration: none;
     font-size: 30px;
+    height: 100%;
+    transition: color .2s ease-in-out;
 }
-.logo{
-    width: 110px;
+.navbar-nav a{
+    color: #F3F6FF !important;
+    text-decoration: none;
+    transition: color .2s ease-in-out;
+}
+.navbar-brand a:hover,.navbar-nav a:hover{
+    color: #09C5AA !important;
+    text-decoration: none;
+}
+.dropdown-menu{
+    background-color: #10385C !important;
+}
+.dropdown-menu a{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+.dropdown-item{
+    background-color: #10385C !important;
+}
+.dropdown-item:hover{
+    color: aqua !important;
 }

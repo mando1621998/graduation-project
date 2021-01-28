@@ -1,32 +1,26 @@
 import React from 'react'
 import '../NavBar/NavBar.css'
 import logo from "../img/logo.png"
-import {Container,Nav,Navbar,NavDropdown,Row,Col} from 'react-bootstrap'
+import {Container,Nav,Navbar,NavDropdown} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 function NavBar() {
     return(
         
-        <Navbar collapseOnSelect expand="lg">
+        <Navbar className="bg-color" expand="lg" variant="dark">
             <Container>
-                <Row className="r-nav">
-
-                <Col className="col-nav" xs={6} md={5}>
-                    <ul className="ul-nav">
-                        <li>
-                            <Link to="/contact">تواصل معنا</Link>
-                        </li>
-                        <li>
-                            <Link to="/about">من نحن</Link>
-                        </li>
-                    </ul>
-                </Col>
-                <Col className="col-nav" xs={6} md={2}>
-                    {/* <img className="logo" src={logo} alt="" /> */}
-                </Col>
-                <Col className="col-nav" xs={6} md={5}>
-                    xs=6 md=4
-                </Col>
-                </Row>
+                <Navbar.Brand><Link to='/'><span>صنايعي خبره<img src={logo} width='100px' alt="" /></span></Link></Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="ml-auto">
+                    <Nav.Link><Link to='/'>الرئيسية</Link></Nav.Link>
+                    <Nav.Link><Link to='/services'>خدمتنا</Link></Nav.Link>
+                    <NavDropdown title="سجل الان" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="#action/3.1"><Link to='/worker'>صنايعي</Link></NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href="#action/3.4"><Link to='/customer'>عميل</Link></NavDropdown.Item>
+                    </NavDropdown>
+                </Nav>
+                </Navbar.Collapse>
             </Container>
         </Navbar>
         

@@ -1,4 +1,5 @@
 import React  from "react";
+import Navbartop from './Components/Navbartop/Navbartop'
 import NavBar from './Components/NavBar/NavBar'
 import Home from './Components/Home/Home'
 import About from './Components/About/About'
@@ -10,6 +11,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <Navbartop />
         <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />
