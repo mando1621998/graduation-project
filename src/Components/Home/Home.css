@@ -1,0 +1,96 @@
+body
+{
+    height: 9000px;
+}
+.main
+{
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(to right bottom,#10385C,rgb(243, 198, 35));
+    color: white;
+    position: relative;
+}
+.main button
+{
+    background-color:#10385C ;
+    color: white;
+}
+.main button:hover
+{
+    background-color: rgb(243, 198, 35);
+}
+.wave
+{
+    position: absolute;
+    width: 100%;
+    height: 140px;
+    bottom: 0;
+    background-image: url('../img/wave.png');
+    animation: test 5s linear infinite;
+}
+
+.wave::after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    bottom: 0;
+    background-image: url('../img/wave.png');
+    animation: test2 5s linear infinite;
+    opacity: .7;
+}
+
+.wave::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    bottom: 0;
+    background-image: url('../img/wave.png');
+    animation: test 5s 1s linear infinite;
+    opacity: .4;
+}
+.wave img
+{
+    width: 100%;
+}
+
+@keyframes test
+{
+    from
+    {
+        background-position: 0;
+    }
+    to
+    {
+        background-position: 1360px;
+    }
+}
+@keyframes test2
+{
+    from
+    {
+        background-position: 1360px;
+    }
+    to
+    {
+        background-position: 0;
+    }
+}
+.test .container div:first-child
+{
+    height: 100px;
+    background-color: black;
+}
+.test .container div:nth-of-type(2)
+{
+    height: 100px;
+    background-color: dodgerblue;
+}
+.test .container div:nth-of-type(3)
+{
+    height: 100px;
+    background-color: rosybrown;
+}
