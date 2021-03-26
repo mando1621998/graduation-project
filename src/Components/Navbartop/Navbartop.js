@@ -14,6 +14,7 @@ class Navbartop extends Component{
                                 <a className="phone-icon" href="#" target="_blank" title="phone"><i className="fa fa-phone" aria-hidden="true"></i>+1 999-888-77-66</a>
                                 </div>
                             </Col>
+                            
                         <div className="top-area-block top-area-socials socials-colored-hover">
                             <div className="socials inline-inside"> 
                                 <a className="socials-item" href="#" target="_blank" title="facebook"><i className="fa fa-facebook" aria-hidden="true"></i></a>
@@ -25,6 +26,7 @@ class Navbartop extends Component{
                             </div>
                         </div>
                         </Col>
+                        
                     </Row>
                 </Container>
             </div>

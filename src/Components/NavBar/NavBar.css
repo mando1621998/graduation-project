@@ -1,31 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
+
+
 .bg-color{
-    background-image: linear-gradient(to right top,#10385C,rgb(243, 198, 35));
-    height: 80px;
+    background-color: #10385C;
+    width: 100%;
+    height: 92px;
 }
 .navbar-brand
 {
     margin: 0 !important;
     padding: 0;
+    height: 80px;
+    float: right;
 }
 .NavRow
 {
     width: 100%;
+    align-items: center;
+    z-index: 2;
 }
 .navbar-brand a{
-    color:  #10385C !important;
+    color:  #fff !important;
     text-decoration: none !important;
-    font-family: 'Lateef', cursive;
-    font-size: 35px;
+    font-family: 'Lemonada', cursive;
+    font-size: 27px;
     height: 100%;
     font-weight: 400;
     transition: color .2s ease-in-out;
 }
 .navbar-nav a{
-    color: #10385C !important;
+    color: #fff !important;
     text-decoration: none;
     transition: color .2s ease-in-out;
-    font-size: 20px;
+    font-size: 30px;
+    font-family: 'Lateef' , cursive;
 }
 .navbar-brand a:hover,.navbar-nav a:hover{
     color: rgb(243, 198, 35) !important;

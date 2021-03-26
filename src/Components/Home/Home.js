@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 import './Home.css'
-import {Container} from 'react-bootstrap'
-import logo from "../img/aaaaa.png"
+import {Link} from 'react-router-dom'
+import logo from "../img/logo.png"
 class Home extends Component{
     render(){
         return(
             
             <div class="main">
                 <div class="container d-flex h-100 flex-column justify-content-center align-items-center">
-                    <h1> أختــار حـرفتـكـ أو شطـب شقيتـكـ</h1>
-                    <img src={logo} width='150px' alt="" />
-                    <button class="btn btn-dark">خدمتنا</button>
+                    <h1> اختــار حـرفتـكـ أو شطـب شقتـكـ</h1>
+                    <img src={logo} width='190px' height="200px" alt="" />
+                    <Link to="services">الخدمات</Link>
                 </div>
                 <div class="wave"></div>
             </div>          
