@@ -115,3 +115,61 @@
     color: #10385C !important;
     
 }
+
+/* Jumbotron */
+
+.jumbotron{
+    background-color: #fff !important;
+    text-align: center;
+}
+.jumbotron p{
+    font-weight: 700;
+}
+
+/* aboutSec */
+.aboutSec,.aboutSec2{
+    height: 450px;
+    width: 100%;
+}
+.aboutSec .col{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.aboutSec .l-aboutSec{
+    display: flex;
+    justify-content: flex-start;
+}
+.png_aboutSec{
+    background-color: #068888;
+    border-radius: 50%;
+}
+
+/* aboutSec2 */
+.aboutSec2 .r-aboutSec{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.aboutSec-top{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+hr {
+    border-top: 15px solid rgba(3,85,109) !important;
+    border-radius: 10px;
+    width: 33%;
+}
+/* Carousel */
+.carousel{
+    width: 578px;
+}
+.carousel-caption{
+    color: #000 !important;
+}

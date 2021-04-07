@@ -31,6 +31,14 @@ class Signup_Craftsman extends Component {
                     </div>
 
                     <div className="form-group">
+                        <input type="text" className="form-control" placeholder="العنوان" />
+                    </div>
+
+                    <div className="form-group">
+                        <input type="text" className="form-control" placeholder="المهنه" />
+                    </div>
+
+                    <div className="form-group">
                         <input type="password" className="form-control" placeholder="كلمة المرور" />
                     </div>
 

@@ -9,7 +9,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 700px;
+    height: 800px;
     display: flex;
     font-weight: 400;
     font-family: sans-serif;
@@ -20,7 +20,7 @@
 form{
     background-color: #F3F6FF;
     width: 400px;
-    height: 500px;
+    height: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
