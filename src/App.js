@@ -8,6 +8,7 @@ import Services from './Components/Services/Services';
 import Signup_Craftsman from './Components/Registration/Craftsman/Signup_Craftsman';
 import Signup_Customer from './Components/Registration/Customer/Signup_Customer';
 import Login from './Components/Registration/Login/Login';
+import Footer from './Components/Footer/footer';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/Signup_Customer" component={Signup_Customer} />
           <Route path="/Login" component={Login} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
