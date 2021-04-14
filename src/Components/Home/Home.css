@@ -28,7 +28,7 @@
     height: 140px;
     bottom: 0;
     background-image: url('../img/wave.png');
-    animation: test 5s linear infinite;
+    animation: waveMove 5s linear infinite;
 }
 
 .wave::after
@@ -39,7 +39,7 @@
     height: 143px;
     bottom: 0;
     background-image: url('../img/wave.png');
-    animation: test2 5s linear infinite;
+    animation: waveMove2 5s linear infinite;
     opacity: .7;
 }
 
@@ -51,7 +51,7 @@
     height: 143px;
     bottom: 0;
     background-image: url('../img/wave.png');
-    animation: test 5s 1s linear infinite;
+    animation: waveMove 5s 1s linear infinite;
     opacity: .4;
 }
 .wave img
@@ -59,7 +59,7 @@
     width: 100%;
 }
 
-@keyframes test
+@keyframes waveMove
 {
     from
     {
@@ -70,7 +70,7 @@
         background-position: 1360px;
     }
 }
-@keyframes test2
+@keyframes waveMove2
 {
     from
     {
@@ -121,6 +121,9 @@
 .jumbotron{
     background-color: #fff !important;
     text-align: center;
+    padding: 0;
+    margin: 0;
+
 }
 .jumbotron p{
     font-weight: 700;
@@ -128,7 +131,6 @@
 
 /* aboutSec */
 .aboutSec,.aboutSec2{
-    height: 450px;
     width: 100%;
 }
 .aboutSec .col{
@@ -143,7 +145,7 @@
     justify-content: flex-start;
 }
 .png_aboutSec{
-    background-color: #068888;
+    background-color: #fff;
     border-radius: 50%;
 }
 
@@ -162,14 +164,47 @@
     align-items: center;
 }
 hr {
-    border-top: 15px solid rgba(3,85,109) !important;
+    border-top: 10px solid rgb(0,114,172) !important;
     border-radius: 10px;
-    width: 33%;
+    width: 30%;
 }
 /* Carousel */
 .carousel{
     width: 578px;
 }
+.back-carousel{
+    height: 300px;
+}
 .carousel-caption{
     color: #000 !important;
+}
+
+.carousel-control-prev-icon,.carousel-control-next-icon
+{
+    
+    border-radius: 20%;
+    background-color: #10385C !important;
+}
+.color-h5{
+    color: #10385C;
+    font-weight: 700 !important;
+    margin-top: 8px;
+}
+.aboutSec-top{
+    text-align: center;
+}
+.aboutSec2:last-child{
+    margin-top: 40px;
+}
+section{
+    height: 570px;
+}
+.r-aboutSec2{
+    justify-content: left;
+}
+
+.homeimg{
+    width: 515px;
+    height: 500px;
+    margin-top: 30px;
 }

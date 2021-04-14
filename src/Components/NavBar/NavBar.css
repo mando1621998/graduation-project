@@ -3,7 +3,7 @@
 .bg-color{
     background-color: #10385C;
     width: 100%;
-    height: 92px;
+    height: 80px;
 }
 .navbar-brand
 {
@@ -31,7 +31,7 @@
     color: #fff !important;
     text-decoration: none;
     transition: color .2s ease-in-out;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Lateef' , cursive;
 }
 .navbar-brand a:hover,.navbar-nav a:hover{
