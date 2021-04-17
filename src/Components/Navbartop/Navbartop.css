@@ -21,9 +21,11 @@
 .socials{
     max-width: 40%;
     float: right;
+    display: flex;
+    justify-content: center;
 }
 .socials a{
-    margin: 8px;
+    
     color: #F3C623 !important;
     font-size: 20px;
 }

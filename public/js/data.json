@@ -2,23 +2,24 @@
     "works" : [
         {
             "id" : 1,
-            "image_body": "https://static.remove.bg/remove-bg-web/2a274ebbb5879d870a69caae33d94388a88e0e35/assets/start-0e837dcc57769db2306d8d659f53555feb500b3c5d456879b9c843d1872e7baa.jpg",
+            "image_body": "js/New folder/سباكه.png",
             "title": "سباكه"
         },
         {
             "id" : 2,
-            "image_body": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz8pEFFZxWzcp-sfL3nUozdgGPt0dxZKBdFg&usqp=CAU",
+            "image_body": "js/New folder/كهرباء.png",
             "title": "كهرباء"
         },
         {
             "id" : 3,
-            "image_body": "https://production-next-images-cdn.thumbtack.com/i/323476885848834145/width/640.jpeg",
+            "image_body": "js/New folder/نقاشه.png",
             "title": "نقاشه"
         },
         {
             "id" : 4,
-            "image_body": "https://www.mikis-k.com/wp-content/uploads/2019/06/catcam.jpg",
+            "image_body": "js/New folder/اعمال المنزل.png",
             "title": "اعمال منزليه"
         }
+        
     ]
 }

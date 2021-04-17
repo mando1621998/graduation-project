@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import {Container,Row,Col} from 'react-bootstrap'
+import { MDBIcon } from "mdb-react-ui-kit";
+
 import '../Navbartop/Navbartop.css'
 
 class Navbartop extends Component{
@@ -11,18 +13,27 @@ class Navbartop extends Component{
                         <Col className="nav-icon" lg={12} md={12} sm={12}>
                             <Col lg={6} md={6} sm={6}>
                                 <div className="gem-contacts-item gem-contacts-phone">
-                                <a className="phone-icon" href="#" target="_blank" title="phone"><i className="fa fa-phone" aria-hidden="true"></i>+1 999-888-77-66</a>
+                                <a className="phone-icon" href="#!" target="_blank" title="phone"><i className="fa fa-phone" aria-hidden="true"></i>  19812</a>
                                 </div>
                             </Col>
                             
                         <div className="top-area-block top-area-socials socials-colored-hover">
                             <div className="socials inline-inside"> 
-                                <a className="socials-item" href="#" target="_blank" title="facebook"><i className="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a className="socials-item" href="#" target="_blank" title="linkedin"><i className="fa fa-linkedin" aria-hidden="true"></i></a> 
-                                <a className="socials-item" href="#" target="_blank" title="twitter"><i className="fa fa-twitter" aria-hidden="true"></i></a> 
-                                <a className="socials-item" href="#" target="_blank" title="instagram"><i className="fa fa-instagram" aria-hidden="true"></i></a> 
-                                <a className="socials-item" href="#" target="_blank" title="pinterest"><i className="fa fa-pinterest" aria-hidden="true"></i></a> 
-                                <a className="socials-item" href="#" target="_blank" title="youtube"><i className="fa fa-youtube" aria-hidden="true"></i></a>
+                                <a href="#!" className="p-2 fa-lg">
+                                    <MDBIcon fab icon="facebook-f" className="blue-text" />
+                                </a>
+                                <a href="#!" className="p-2 fa-lg">
+                                    <MDBIcon fab icon="instagram" className="blue-text" />
+                                </a>
+                                <a href="#!" className="p-2 fa-lg">
+                                    <MDBIcon fab icon="twitter" className="blue-text" />
+                                </a>
+                                <a href="#!" className="p-2 fa-lg">
+                                    <MDBIcon fab icon="dribbble" className="blue-text" />
+                                </a>
+                                <a href="#!" className="p-2 fa-lg">
+                                    <MDBIcon fab icon="github" className="blue-text" />
+                                </a>
                             </div>
                         </div>
                         </Col>
@@ -30,8 +41,6 @@ class Navbartop extends Component{
                     </Row>
                 </Container>
             </div>
-
-
         )
     }
 }

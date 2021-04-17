@@ -17,7 +17,7 @@
     background: _webkit_linear-gradient(90deg, rgba(16,56,92,1) 5%, rgba(6,136,136,1) 30%, rgba(243,198,35,1) 90%, rgba(247,231,74,1) 100%);
     background: linear-gradient(90deg, rgba(16,56,92,1) 5%, rgba(6,136,136,1) 30%, rgba(243,198,35,1) 90%, rgba(247,231,74,1) 100%);
 }
-form{
+.RegistationForm{
     background-color: #F3F6FF;
     width: 400px;
     height: 650px;
@@ -29,21 +29,21 @@ form{
     border-radius: 15px;
     box-shadow: 9px 7px 20px #10385c;
 }
-.Signup_Craftsman form h1{
+.Signup_Craftsman .RegistationForm h1{
     margin-bottom: 25px;
 }
-.form-group{
+form-group{
     width: 90%;
 }
-form button{
+.RegistationForm button{
     width: 40% !important;
     background-color:  rgb(16,56,92) !important;
     border: none !important;
     font-weight: 900 !important;
 }
-form button:hover{
+.RegistationForm button:hover{
     background-color:  rgba(243,198,35,1) !important;
 }
-form p{
+.RegistationForm p{
     margin-top: 10px;
 }
