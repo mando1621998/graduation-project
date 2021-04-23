@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import './Home.css'
 import {Link} from 'react-router-dom'
 import {Jumbotron,Container,Row,Col,Carousel} from 'react-bootstrap'
+import { MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
 import logo from "../img/logo.png"
-import aboutSec from '../img/—Pngtree—hand drawn yellow bike delivery_5331773.png'
 import delivery from '../img/delivery.png'
 import callCenter from '../img/call center.jpg'
 import Tech from '../img/tech.jpg'
@@ -20,16 +20,21 @@ import HomeImg from '../img/homeimg.gif'
 
 class Home extends Component{
     render(){
+        
+
         return(
             
         <React.Fragment>
-            <div class="main">
-                <div class="container d-flex h-100 flex-column justify-content-center align-items-center">
+            <div className='scroll_top'>
+
+            </div>
+            <div className="main">
+                <div className="container d-flex h-100 flex-column justify-content-center align-items-center">
                     <h1> اختــار حـرفتـكـ أو شطـب شقتـكـ</h1>
                     <img src={logo} width='190px' height="200px" alt="" />
                     <Link to="services">الخدمات</Link>
                 </div>
-                <div class="wave"></div>
+                <div className="wave"></div>
             </div>
 
             <Jumbotron fluid>
@@ -280,6 +285,19 @@ class Home extends Component{
                     <p>
                     تابع اخر الأخبـار واستمتع بالعروض والبرومو كود على وسائل التواصل الإجتمــاعى
                     </p>
+                    <MDBBtn className='m-1' style={{ backgroundColor: '#3b5998' }} href='#'>
+                        <MDBIcon fab icon='facebook-f' />
+                    </MDBBtn>
+
+                    <MDBBtn className='m-1' style={{ backgroundColor: '#55acee' }} href='#'>
+                        <MDBIcon fab icon='twitter' />
+                    </MDBBtn>
+                    <MDBBtn className='m-1' style={{ backgroundColor: '#25d366' }} href='#'>
+                        <MDBIcon fab icon='whatsapp' />
+                    </MDBBtn>
+                    <MDBBtn className='m-1' style={{ backgroundColor: '#ac2bac' }} href='#'>
+                        <MDBIcon fab icon='instagram' />
+                    </MDBBtn>
                     <hr/>
                     <img className='homeimg' src={HomeImg} width='300' height='300' alt=""/>
                 </Container>

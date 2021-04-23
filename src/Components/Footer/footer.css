@@ -5,3 +5,9 @@
 .text-link-footer{
     color: #fff !important;
 }
+footer{
+    height: 350px;
+}
+.container p-4{
+    padding-bottom: 0;
+}

@@ -1,6 +1,8 @@
 import Axios from 'axios'
 import React , { Component }from 'react'
+import {Jumbotron,Container} from 'react-bootstrap'
 import './Services.css'
+
 
 class Services extends Component{
     
@@ -23,7 +25,7 @@ class Services extends Component{
                                 <div className="content">
                                     <h2>{workItem.title}</h2><br />
                                     
-                                <a href="#">اطلب الان</a>
+                                <a href="#!">اطلب الان</a>
                                 </div>
                             </div>
                         </React.Fragment>
@@ -32,12 +34,23 @@ class Services extends Component{
         })
     
         return(
-            <div className="work">
+            <React.Fragment>
+                <Jumbotron fluid>
+                    <Container>
+                        <h2>صنايعي خبره : خدمتنا</h2>
+                        <p>
+                        صنايعي خبره هو بوابة اى حرفه , وعشان نضمن اننا نكون حلقة وصل فعالة اعتمدنا على تحقيق الفرص للصنايعي والعميل
+                        </p>
+                        <hr/>
+                    </Container>
+                </Jumbotron>
+                <div className="work">
                 <div className="container">
-                    
                     {worksList}
                 </div>
             </div>
+            </React.Fragment>
+            
         )
     }
     

@@ -17,6 +17,8 @@ function NavBar() {
                                     <NavDropdown.Item ><Link to='/Signup_Craftsman'>صنايعي</Link></NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.4"><Link to='/Signup_customer'>عميل</Link></NavDropdown.Item>
                                 </NavDropdown>
+                                <Nav.Link><Link to='/Contact'>تواصل معانا</Link></Nav.Link>
+                                <Nav.Link><Link to='/About'>نبذه عنا</Link></Nav.Link>
                                 <Nav.Link><Link to='/services'>الخدمات</Link></Nav.Link>
                                 <Nav.Link><Link to='/'>الرئيسية</Link></Nav.Link>
                             </Nav>

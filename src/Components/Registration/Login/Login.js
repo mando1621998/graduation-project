@@ -7,7 +7,7 @@ class Login_Craftsman extends Component {
     render() {
         return (
             <div className="Login">
-                <Form>
+                <Form className='RegistationForm'>
 
                     <h1>تسجيل دخول</h1>
 

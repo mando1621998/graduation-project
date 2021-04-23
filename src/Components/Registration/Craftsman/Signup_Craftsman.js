@@ -7,7 +7,7 @@ class Signup_Craftsman extends Component {
     render() {
         return (
             <div className="Signup_Craftsman">
-                <Form>
+                <Form className='RegistationForm'>
                     <h1>انضم الينا كصنايعي !</h1>
 
                     <div className="form-group">

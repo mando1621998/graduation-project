@@ -11,7 +11,7 @@ class Signup_Customer extends Component {
     render() {
         return (
             <div className="Signup_Customer">
-                <Form>
+                <Form className='RegistationForm'>
                     <h1>انضم الينا كعميل !</h1>
 
                     <div className="form-group">
