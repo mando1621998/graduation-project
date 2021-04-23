@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop'
 import Navbartop from './Components/Navbartop/Navbartop';
 import NavBar from './Components/NavBar/NavBar';
 import Home from './Components/Home/Home';
@@ -15,6 +16,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <ScrollToTop />
         <Navbartop />
         <NavBar />
         <Switch>

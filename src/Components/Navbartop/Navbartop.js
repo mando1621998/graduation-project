@@ -12,8 +12,8 @@ class Navbartop extends Component{
                     <Row>
                         <Col className="nav-icon" lg={12} md={12} sm={12}>
                             <Col lg={6} md={6} sm={6}>
-                                <div className="gem-contacts-item gem-contacts-phone">
-                                <a className="phone-icon" href="#!" target="_blank" title="phone"><i className="fa fa-phone" aria-hidden="true"></i>  19812</a>
+                            <div className="gem-contacts-item gem-contacts-phone">
+                                <a _ngcontent-c2="" class="no-link" href="tel:19812"><i className="fa fa-phone" aria-hidden="true"></i> 19812</a>
                                 </div>
                             </Col>
                             
