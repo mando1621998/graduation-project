@@ -1,5 +1,6 @@
 import React from "react";
-import ScrollToTop from './Components/ScrollToTop/ScrollToTop'
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
+import safetyMeasures from './Components/SafetyMeasures/safetyMeasures'
 import Navbartop from './Components/Navbartop/Navbartop';
 import NavBar from './Components/NavBar/NavBar';
 import Home from './Components/Home/Home';
@@ -20,6 +21,7 @@ function App() {
         <Navbartop />
         <NavBar />
         <Switch>
+
           <Route exact path="/" component={Home} />
           <Route path="/services" component={Services} />
           <Route path="/About" component={About} />
@@ -27,6 +29,7 @@ function App() {
           <Route path="/Signup_Craftsman" component={Signup_Craftsman} />
           <Route path="/Signup_Customer" component={Signup_Customer} />
           <Route path="/Login" component={Login} />
+          <Route path="/safetyMeasures" component={safetyMeasures} />
         </Switch>
         <Footer />
       </div>

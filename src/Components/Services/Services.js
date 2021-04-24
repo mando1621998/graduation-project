@@ -1,10 +1,21 @@
 import Axios from 'axios'
 import React , { Component }from 'react'
-import {Jumbotron,Container} from 'react-bootstrap'
+import {Jumbotron, Container, Button, Modal, InputGroup, FormControl} from 'react-bootstrap'
 import './Services.css'
 
 
 class Services extends Component{
+
+    
+
+    handleShow(){
+        this.setState({show:true})
+    }
+    handleClose(){
+        this.setState({show:false})
+    }
+
+    
     
     state = {
         works:[]
@@ -12,6 +23,8 @@ class Services extends Component{
     componentDidMount = () => {
         Axios.get('js/data.json').then(res => {this.setState({works: res.data.works})})
     }
+
+    
 
     render(){
 
@@ -25,7 +38,41 @@ class Services extends Component{
                                 <div className="content">
                                     <h2>{workItem.title}</h2><br />
                                     
-                                <a href="#!">اطلب الان</a>
+                                <Button onClick={() =>{this.handleShow()}}>اطلب الان</Button>
+
+                                <Modal show={this.state.show} >
+                                    <Modal.Header>ادخال بيانات</Modal.Header>
+                                    <Modal.Body>
+
+
+                                        
+                                    <InputGroup className="mb-3">
+                                    <InputGroup.Prepend>
+                                        <InputGroup.Text>الاسم الاول والاسم الاخير</InputGroup.Text>
+                                    </InputGroup.Prepend>
+                                    <FormControl />
+                                    <FormControl />
+                                    </InputGroup>
+
+                                    <InputGroup className="mb-3">
+                                        <FormControl
+                                        placeholder="ادخل البريد الالكتروني"
+                                        aria-label="ادخل البريد الالكتروني"
+                                        aria-describedby="basic-addon2"
+                                        />
+                                        <InputGroup.Append>
+                                        <InputGroup.Text id="basic-addon2">@gmail.com</InputGroup.Text>
+                                        </InputGroup.Append>
+                                    </InputGroup>
+
+                                    </Modal.Body>
+                                    <Modal.Footer>
+                                        <Button onClick={() =>{this.handleClose()}}>
+                                            Close Modal
+                                        </Button>
+                                    </Modal.Footer>
+                                </Modal>
+
                                 </div>
                             </div>
                         </React.Fragment>

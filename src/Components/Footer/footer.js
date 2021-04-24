@@ -1,6 +1,7 @@
 /* eslint-disable react/style-prop-object */
 import React from "react";
 import {} from "react-bootstrap";
+import {Link} from 'react-router-dom'
 import '../Footer/footer.css'
 import logo from "../img/logo.png"
 
@@ -28,10 +29,10 @@ const FooterPage = () => {
 
                     <ul className="list-unstyled mb-0">
                     <li>
-                        <a href="#!" className="text-link-footer">إجراءات السلامه</a>
+                        <Link to='/safetyMeasures' className="text-link-footer">إجراءات السلامه</Link>
                     </li>
                     <li>
-                        <a href="#!" className="text-link-footer">تواصل معنا</a>
+                        <Link to='/Contact' className="text-link-footer">تواصل معنا</Link>
                     </li>
                     </ul>
                 </div>
@@ -43,19 +44,19 @@ const FooterPage = () => {
 
                     <ul className="list-unstyled mb-0">
                     <li>
-                        <a href="#!" className="text-link-footer">نبذه عنا</a>
+                        <Link to='/About' className="text-link-footer">نبذه عنا</Link>
                     </li>
                     <li>
-                        <a href="#!" className="text-link-footer">مساعدة</a>
+                        <Link to='' className="text-link-footer">مساعدة</Link>
                     </li>
                     <li>
-                        <a href="#!" className="text-link-footer">التوصيات</a>
+                        <Link to='' className="text-link-footer">التوصيات</Link>
                     </li>
                     <li>
-                        <a href="#!" className="text-link-footer">الشروط والاحكام</a>
+                        <Link to='' className="text-link-footer">الشروط والاحكام</Link>
                     </li>
                     <li>
-                        <a href="#!" className="text-link-footer">سياسات الخصوصية</a>
+                        <Link to='' className="text-link-footer">سياسات الخصوصية</Link>
                     </li>
                     </ul>
                 </div>
@@ -69,7 +70,7 @@ const FooterPage = () => {
         </div>
         
 
-        
+        <div id="footer-line"></div>
         <div className="text-center p-3" >
             © 2020 Copyright:
             <a className="text-link-footer" href="https://mdbootstrap.com/"> snai3y5ebra.com</a>

@@ -20,6 +20,40 @@
             "image_body": "js/New folder/اعمال المنزل.png",
             "title": "اعمال منزليه"
         }
+        ,
+        {
+            "id" : 5,
+            "image_body": "js/New folder/نجاره.png",
+            "title": "نجاره"
+        }
+        ,
+        {
+            "id" : 6,
+            "image_body": "js/New folder/تكييفات.png",
+            "title": "تكييفات"
+        }
+        ,
+        {
+            "id" : 7,
+            "image_body": "js/New folder/دش.png",
+            "title": "دش"
+        },
+        {
+            "id" : 8,
+            "image_body": "js/New folder/تعقيم وتطهير.png",
+            "title": "تعقيم وتطهير"
+        },
+        {
+            "id" : 9,
+            "image_body": "js/New folder/تركيب بلاط وسيراميك.png",
+            "title": "تركيب سيراميك"
+        },
+        {
+            "id" : 10,
+            "image_body": "js/New folder/الوميتال.png",
+            "title": "الوميتال"
+        }
+        
         
     ]
 }

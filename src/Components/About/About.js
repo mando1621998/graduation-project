@@ -1,7 +1,12 @@
 import React, { Component } from 'react'
 import {  MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon } from "mdb-react-ui-kit";
 import esraa from '../img/team.png'
+import Abdallah from '../img/about/Abdallah.jpeg'
+import Mohamed1 from '../img/about/Mohamed1.jpeg'
+import Walaa from '../img/about/Walaa.jpeg'
+import Esraa2 from '../img/about/Esraa2.jpeg'
 import {Jumbotron,Container} from 'react-bootstrap'
+import '../About/About.css'
 class About extends Component {
     render() {
         return (
@@ -16,14 +21,16 @@ class About extends Component {
                         <hr/>
                     </Container>
                 </Jumbotron>
+                
+                <div className="team-card">
+
                 <MDBRow>
                   <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
-                    <img src={esraa} width='190px' height="200px" alt=""/>
-                    <h5 className="font-weight-bold mt-4 mb-3">Anna Williams</h5>
-                    <p className="text-uppercase blue-text">Graphic designer</p>
+                    <img src={Mohamed1} width='190px' height="200px" alt=""/>
+                    <h5 className="font-weight-bold mt-4 mb-3">محمد احمد عبد الرحيم</h5>
+                    <p className="text-uppercase blue-text">مطور مواقع ويب</p>
                     <p className="grey-text">
-                      Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                      consectetur, adipisci sed quia non numquam modi tempora eius.
+                      يدرس نظم المعلومات الاداريه بمعهد الجيزه العالي للعلوم الاداريه 
                     </p>
                     <ul className="list-unstyled mb-0">
                       <a href="#!" className="p-2 fa-lg">
@@ -39,12 +46,11 @@ class About extends Component {
                   </MDBCol>
 
                   <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
-                    <img src={esraa} width='190px' height="200px" alt=""/> 
-                    <h5 className="font-weight-bold mt-4 mb-3">John Doe</h5>
-                    <p className="text-uppercase blue-text">Web Developer</p>
+                    <img src={Esraa2} width='190px' height="200px" alt=""/> 
+                    <h5 className="font-weight-bold mt-4 mb-3">اسراء هريدي سيد</h5>
+                    <p className="text-uppercase blue-text">مطورة مواقع ويب</p>
                     <p className="grey-text">
-                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                      ipsa accusantium doloremque rem laudantium totam aperiam.
+                      يدرس نظم المعلومات الاداريه بمعهد الجيزه العالي للعلوم الاداريه 
                     </p>
                     <ul className="list-unstyled mb-0">
                       <a href="#!" className="p-2 fa-lg">
@@ -57,12 +63,11 @@ class About extends Component {
                   </MDBCol>
 
                   <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
-                    <img src={esraa} width='190px' height="200px" alt=""/>
-                    <h5 className="font-weight-bold mt-4 mb-3">Maria Smith</h5>
-                    <p className="text-uppercase blue-text">Photographer</p>
+                    <img src={Abdallah} width='190px' height="200px" alt=""/>
+                    <h5 className="font-weight-bold mt-4 mb-3">عبد الله سيد احمد</h5>
+                    <p className="text-uppercase blue-text">مطور مواقع ويب</p>
                     <p className="grey-text">
-                      Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                      qui officia deserunt mollit anim est fugiat nulla id eu laborum.
+                      يدرس نظم المعلومات الاداريه بمعهد الجيزه العالي للعلوم الاداريه 
                     </p>
                     <ul className="list-unstyled mb-0">
                       <a href="#!" className="p-2 fa-lg">
@@ -78,13 +83,11 @@ class About extends Component {
                   </MDBCol>
 
                   <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
-                    <img src={esraa} width='190px' height="200px" alt=""/>
-                    <h5 className="font-weight-bold mt-4 mb-3">Tom Adams</h5>
-                    <p className="text-uppercase blue-text">Backend Developer</p>
+                    <img src={Walaa} width='190px' height="200px" alt=""/>
+                    <h5 className="font-weight-bold mt-4 mb-3">ولاء </h5>
+                    <p className="text-uppercase blue-text">مصممة</p>
                     <p className="grey-text">
-                      Perspiciatis repellendus ad odit consequuntur, eveniet earum
-                      nisi qui consectetur totam officia voluptates perferendis
-                      voluptatibus aut.
+                      يدرس نظم المعلومات الاداريه بمعهد الجيزه العالي للعلوم الاداريه 
                     </p>
                     <ul className="list-unstyled mb-0">
                       <a href="#!" className="p-2 fa-lg">
@@ -222,6 +225,9 @@ class About extends Component {
                     </ul>
                   </MDBCol>
                 </MDBRow>
+
+                </div>
+
               </MDBCardBody>
       </MDBCard>
         )

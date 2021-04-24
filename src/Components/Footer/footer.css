@@ -11,3 +11,9 @@ footer{
 .container p-4{
     padding-bottom: 0;
 }
+#footer-line{
+    width: 80%;
+    margin: auto;
+    height: 1px;
+    background-color: #fff;
+}

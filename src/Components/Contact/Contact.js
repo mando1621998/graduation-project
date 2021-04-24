@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import {  MDBContainer, MDBRow, MDBCol, MDBIcon, MDBBtn, MDBInput } from "mdb-react-ui-kit";
 import {Jumbotron,Container} from 'react-bootstrap'
+import HomeImg from '../img/homeimg.gif'
+import '../Contact/Contact.css'
 
 class Contact extends Component {
   render() {
@@ -15,13 +17,16 @@ class Contact extends Component {
                 <hr/>
             </Container>
         </Jumbotron>
+        
+        <div className="form-contact">
+
         <MDBRow>
           <MDBCol md="9" className="md-0 mb-5">
             <form>
               <MDBRow>
                 <MDBCol md="6">
                   <div className="md-form mb-0">
-                    <MDBInput type="text" id="contact-name" label="Your name" />
+                    <MDBInput type="text" id="contact-name" label="اسمك" />
                   </div>
                 </MDBCol>
                 <MDBCol md="6">
@@ -29,7 +34,7 @@ class Contact extends Component {
                     <MDBInput
                       type="text"
                       id="contact-email"
-                      label="Your email"
+                      label="البريد الالكتروني"
                     />
                   </div>
                 </MDBCol>
@@ -37,7 +42,7 @@ class Contact extends Component {
               <MDBRow>
                 <MDBCol md="12">
                   <div className="md-form mb-0">
-                    <MDBInput type="text" id="contact-subject" label="Subject" />
+                    <MDBInput type="text" id="contact-subject" label="الموضوع" />
                   </div>
                 </MDBCol>
               </MDBRow>
@@ -47,7 +52,7 @@ class Contact extends Component {
                     <MDBInput
                       type="textarea"
                       id="contact-message"
-                      label="Your message"
+                      label="رسالتك"
                     />
                   </div>
                 </MDBCol>
@@ -55,7 +60,7 @@ class Contact extends Component {
             </form>
             <div className="text-center text-md-left">
               <MDBBtn color="primary" size="md">
-                Send
+                إرسال
               </MDBBtn>
             </div>
           </MDBCol>
@@ -76,7 +81,39 @@ class Contact extends Component {
             </ul>
           </MDBCol>
         </MDBRow>
+
+        </div>
+
+        <Jumbotron fluid>
+                <Container>
+                    <h3>تابع الآخبار
+                        <img src="http://www.san3ah.com/assets/Images/cout.png" alt="" />
+                    </h3>
+                    <p>
+                    تابع اخر الأخبـار واستمتع بالعروض والبرومو كود على وسائل التواصل الإجتمــاعى
+                    </p>
+                    <MDBBtn className='m-1' style={{ backgroundColor: '#3b5998' }} href='#'>
+                        <MDBIcon fab icon='facebook-f' />
+                    </MDBBtn>
+
+                    <MDBBtn className='m-1' style={{ backgroundColor: '#55acee' }} href='#'>
+                        <MDBIcon fab icon='twitter' />
+                    </MDBBtn>
+                    <MDBBtn className='m-1' style={{ backgroundColor: '#25d366' }} href='#'>
+                        <MDBIcon fab icon='whatsapp' />
+                    </MDBBtn>
+                    <MDBBtn className='m-1' style={{ backgroundColor: '#ac2bac' }} href='#'>
+                        <MDBIcon fab icon='instagram' />
+                    </MDBBtn>
+                    <hr/>
+                    <img className='homeimg' src={HomeImg} width='300' height='300' alt=""/>
+                </Container>
+            </Jumbotron>
+
       </MDBContainer>
+
+      
+
     );
   }
 }
